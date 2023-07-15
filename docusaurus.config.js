@@ -1,17 +1,16 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const vsDark = require('prism-react-renderer/themes/vsDark');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'StorePHP',
+  tagline: 'This free and open-source eCommerce solution for building your eCommerce based on Laravel.',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
-  url: 'https://storephp.github.io/docs/',
+  url: 'https://storephp.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -64,9 +63,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'StorePHP Docs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'StorePHP Docs Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -78,7 +77,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/storephp',
             label: 'GitHub',
             position: 'right',
           },
@@ -130,8 +129,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: vsDark,
+        darkTheme: vsDark,
+        additionalLanguages: ['php'],
       },
     }),
 };
